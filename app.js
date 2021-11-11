@@ -53,6 +53,7 @@ function show(object){
                 localStorage.setItem("todos", JSON.stringify(object))
                 li.remove()
             })
+            
             //  console.log(JSON.parse(localStorage.getItem("todos")))
         }
     }
@@ -62,6 +63,7 @@ addButton.addEventListener('click', () => {
     let ob = JSON.parse(localStorage.getItem("todos"))
     ob[hour.value] = input.value
     checkObject(ob)
+    input.textContent = ""
 })
 
 function checkObject(obj){
