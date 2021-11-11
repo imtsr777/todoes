@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            width: 900px;
+            box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .top {
+            display: flex;
+            background-color: blue;
+            font-size: 19px;
+        }
+
+        .top input {
+            flex-grow: 1;
+            padding: 5px;
+            font-size: 19px;
+        }
+
+        .top button {
+            padding: 5px 20px;
+        }
+        li{
+            background-color: green;
+        }
+
+        #list {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        #list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        .colors {
+            margin-left: auto;
+            margin-right: 30px;
+        }
+
+
+        .green,
+        .red {
+            padding: 2px 25px;
+            background-color: red;
+            margin-right: 15px;
+            border: 1px solid grey;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .liGreen {
+            background-color: green;
+        }
+
+        .liRed {
+            background-color: red;
+        }
+
+        #list button {
+            background: none;
+
+        }
+        /* input[type=time]::-webkit-datetime-edit-ampm-field{color: transparent;}  */
+        /* input[type=time]::datetime-edit-field{display: none !important;} */
+        /* input[type=time]::datetime-edit-field.numeric{display: inline !important;} */
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top">
+            <input id="input" type="text" placeholder="add todo...">
+            <input type="time" id="time">
+            <button id="btn">ADD</button>
+        </div>
+        <ul id="list">
+            <!-- <li>
+                <span>Uxlashim kerak</span>
+                <div class="colors">
+                    <span class="green"></span>
+                    <span class="red"></span>
+                </div>
+                <button>X</button>
+            </li> -->
+        </ul>
+    </div>
+
+    <script src="./dom.js"></script>
+</body>
+
+</html>
