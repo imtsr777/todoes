@@ -63,7 +63,7 @@ addButton.addEventListener('click', () => {
     let ob = JSON.parse(localStorage.getItem("todos"))
     ob[hour.value] = input.value
     checkObject(ob)
-    input.textContent = ""
+    input.value = ""
 })
 
 function checkObject(obj){
