@@ -57,6 +57,12 @@ function show(object){
             //  console.log(JSON.parse(localStorage.getItem("todos")))
         }
     }
+    
+    if(hour_minut=="2359"){
+        let nobj = {}
+        list.innerHTML = null
+        localStorage.setItem("todos",JSON.stringify(nobj))
+    }
 }
 
 addButton.addEventListener('click', () => {
